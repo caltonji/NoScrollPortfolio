@@ -1,0 +1,3 @@
+<filter id="blur">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+</filter>

@@ -1,0 +1,32 @@
+.halfBlurred__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.halfBlurred__photoContainer {
+    width: 50%;
+    height: 100%;
+}
+.halfBlurred__photo {
+    width: 150%;   
+}
+.halfBlurred__photoInnerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.halfBlurred__photoInnerContainer--left {
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 110% 0%);
+}
+.halfBlurred__photoInnerContainer--right {
+    clip-path: polygon(8% 0%, -2% 100%, 100% 100%, 100% 0%);
+}
+.halfBlurred__photo--left {
+    z-index: 1;
+}
+.halfBlurred__photo--blurred {
+    filter: blur(6em);
+    transform: scaleX(-1);
+    z-index: -1;
+}    
